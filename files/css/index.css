@@ -1,0 +1,182 @@
+html, body {
+    width: 100%;
+    aspect-ratio: 2 / .95;
+    max-width: 1500px;
+    min-width: 320px;
+    min-height: 480px;
+    background-color: #fff;
+    color: rgba(76, 98, 109, 1);
+    margin: auto;
+    font-family: "Patrick Hand";
+    font-size: clamp(0px, 1.3vw, 26px);
+    letter-spacing: clamp(0px, 0.15vw, 1.1px);    
+}
+
+
+body {
+    margin: 0;
+}
+
+
+#main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    aspect-ratio: 2 / .95;
+    position: relative;
+}
+
+
+#introduction {
+    height: 100%;
+    width: 50%;
+    background-color: rgba(196, 218, 229, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+
+#introduction_text {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+
+#introduction_text > *{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+}
+
+
+#introduction_list {
+    justify-content: center;
+    height: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#introduction_title {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 2vh;
+}
+
+
+#introduction_title > *{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#introduction_title div:nth-child(1){
+    font-size: clamp(0px, 1.7vw, 40px);    
+    color: rgba(0, 130, 100, 1);
+}
+
+
+.moon_list {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: clamp(0px, 1vw, 15px);
+}
+
+
+.moon_icon {
+    width: clamp(0px, 1.5vw, 30px);
+    height: clamp(0px, 1.5vw, 30px);
+    background-image: url("../images/moon_icon3.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+
+#introduction_contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+    color: rgba(0, 130, 100, 1);
+}
+
+
+#introduction_contact_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 100%;
+    gap: clamp(0px, 1vw, 15px);
+}
+
+
+#discord {
+    width: clamp(0px, 2vw, 37.5px);
+    height: clamp(0px, 1.6vw, 30px);
+    background-image: url("../images/discord_logo.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#introduction_link {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: .2vw rgba(156, 178, 189, 1) solid;
+    color: rgba(0, 130, 100, 1);
+    font-size: clamp(0px, 1.5vw, 30px);
+}
+
+#introduction_link div:nth-child(1) {
+    border-right: .2vw rgba(156, 178, 189, 1) solid;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#introduction_link div:nth-child(2) {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#profile {
+    height: 100%;
+    width: 50%;
+    background-image: url("../images/naga.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.link:hover {
+    background-color: rgba(176, 218, 255, 1);
+    cursor: pointer;
+}
