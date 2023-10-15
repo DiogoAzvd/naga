@@ -76,7 +76,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: end;
-    gap: 2vh;
+    gap: clamp(0px, 2vh, 10px);
 }
 
 
@@ -179,4 +179,32 @@ body {
 .link:hover {
     background-color: rgba(176, 218, 255, 1);
     cursor: pointer;
+}
+
+@media (max-width: 900px) {
+    #main {
+        flex-direction: column;
+        width: 100%;
+        aspect-ratio: 1 / 1;
+        font-size: clamp(0px, 3.5vw, 100px);
+    }
+    
+    
+    #introduction {
+        width: 100%;
+        aspect-ratio: 1 / 1;
+    }
+
+    #profile {
+        width: 100%;
+        aspect-ratio: 1 / 1;
+    }
+
+    #introduction_title div:nth-child(1){
+        font-size: clamp(0px, 4vw, 100px);
+    }
+
+    #introduction_link {
+        font-size: clamp(0px, 3.7vw, 100px);
+    }
 }
