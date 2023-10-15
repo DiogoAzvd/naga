@@ -218,3 +218,33 @@ body {
         height: clamp(0px, 2.6vw, 100px);
     }
 }
+
+.clip_animation {
+    clip-path: inset(0px 100% 0px 0px);
+    transition-timing-function: ease-out;
+    animation-name: clip_animation;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+.moon_list {
+    animation-delay: 1.2s;
+}
+
+#introduction_contact {
+    animation-delay: 2.4s;
+}
+
+#introduction_link {
+    animation-delay: 3.6s;
+}
+
+@keyframes clip_animation {
+    0% {
+        clip-path: inset(0px 100% 0px 0px);
+    }
+
+    100% {
+        clip-path: inset(0px 0% 0px 0px);
+    }
+}
